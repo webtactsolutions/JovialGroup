@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#F2F2F2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/app_dark_blue" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="none" android:textSize="18sp" android:gravity="center|right" android:id="@+id/tvCalcDisplay" android:background="@color/app_dark_blue" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:textColor="#f9f9f9" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TableLayout android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content"
+            >
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnC" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="C" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnDel" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="DEL" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn7" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="7" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn8" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="8" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn9" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="9" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnPlus" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="+" android:layout_weight="1.0"
+                android:onClick="calculateAction" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn4" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="4" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn5" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="5" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn6" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="6" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnDev" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="/" android:layout_weight="1.0"
+                android:onClick="calculateAction" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn1" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="1" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn2" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="2" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn3" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="3" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnMinus" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="-" android:layout_weight="1.0"
+                android:onClick="calculateAction" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtn0" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="0" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnDot" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="." android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnEq" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="=" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@+id/tvCalcBtnRndMul" android:background="@drawable/cal_btn_sel" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="*" android:layout_weight="1.0"
+                android:onClick="calculateAction" />
+        </TableRow>
+    </TableLayout>
+    <View android:background="#e1e1e1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#f8f8f8" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnUnitValueOk" android:background="@color/app_dark_blue" android:layout_width="0.0dip" android:textColor="#f9f9f9" android:layout_height="wrap_content" android:text="OK" android:layout_weight="1.0" />
+        <Button android:id="@+id/btnUnitValueCencel" android:textColor="#666" android:background="@color/material_drawer_selected_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="CANCEL" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

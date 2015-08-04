@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.co.scorp.jovialgroup" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="in.co.scorp.jovialgroup.activities.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="in.co.scorp.jovialgroup.services.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".services.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="in.co.scorp.jovialgroup.services" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.GCMIntentService" />
+        <service android:name=".services.SliderImgService" />
+
+        <receiver
+            android:name=".activities.LoginActivity$LoginDone"
+            android:exported="true" />
+        <receiver
+            android:name=".fragments.HomeFragmnent$ImageSliderBroadcast"
+            android:exported="true" />
+        <receiver
+            android:name=".activities.TrackerActivity$ServicesListLoaded"
+            android:exported="true" />
+        <receiver
+            android:name=".activities.MessagesActivity$MsgsRecievedBroadCast"
+            android:exported="true" />
+        <receiver
+            android:name=".activities.MessagesActivity$MessageRecievedBroadcastReceiver"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name=".activities.TrackerActivity$ServicesListLoaded"
+            android:exported="true" />
+        <receiver
+            android:name=".activities.TrackerStatusActivity$TrackServiceRecieved"
+            android:exported="true" />
+        <receiver
+            android:name=".activities.JantriActivity$ResponseGot"
+            android:exported="true" />
+        <receiver android:name=".activities.RegistrationActivity$UserChecked" />
+
+        <service android:name=".services.LoginIntentService" />
+        <service android:name=".services.GetMessagesService" />
+        <service android:name=".services.RegistrationService" />
+        <service android:name=".services.UserCheckService" />
+        <service
+            android:name=".services.GCMStautsIntentService"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Jovial Group"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ClientActivity"
+            android:label="@string/title_activity_client" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ContactDetailsActivity"
+            android:label="@string/title_activity_contact_details"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ServicesActivity"
+            android:label="@string/title_activity_services"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProjectsActivity"
+            android:label="@string/title_activity_projects"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.WhoWeAreActivity"
+            android:label="@string/title_activity_who_we_are"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".services.LogoutService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:label="@string/title_activity_reg"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RevenueRecordActivity"
+            android:label="@string/title_activity_revenue_record" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Map"
+            android:label="@string/title_activity_map"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.GovCircular"
+            android:label="@string/title_activity_circular"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+>
+        </activity>
+        <activity
+            android:name=".activities.MyAccount"
+            android:label="@string/title_activity_my_account"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+>
+        </activity>
+        <activity
+            android:name=".activities.LoanCalculator"
+            android:label="@string/title_activity_loan_calculator"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+>
+        </activity>
+        <activity
+            android:name=".activities.LoanCalcResult"
+            android:label="@string/title_activity_loan_calc_result"
+            android:parentActivityName=".activities.LoanCalculator" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.activities.LoanCalculator" />
+>
+        </activity>
+        <activity
+            android:name=".activities.UnitConverterActivity"
+            android:label="@string/title_activity_unit_converter"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.scorp.jovialgroup.MainActivity" />
+>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,597 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical"
+    android:id="@+id/about_container"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/material_drawer_primary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="1dp"
+                android:padding="10dp"
+                card_view:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="About Jovial Group"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvAboutTitle"
+                        android:textColor="#444" />
+
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_content"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_about_text"/>
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="1dp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                card_view:contentPadding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Vision"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvAboutVisionTitle"
+                        android:textColor="#444" />
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_content"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tvAboutVisionText"/>
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="1dp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                card_view:contentPadding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Mission"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvAboutMissionTitle"
+                        android:textColor="#444" />
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tvAboutMissionText"/>
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/values_Card"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="1dp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                card_view:contentPadding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Values"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvAboutValuesTitle"
+                        android:textColor="#444" />
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tvAboutValuesTextOne"/>
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tvAboutValuesTextTwo"/>
+
+                    <in.co.scorp.jovialgroup.util.TextViewEx
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tvAboutValuesTextThree"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/team_card"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="1dp"
+                android:padding="10dp"
+                card_view:contentPadding="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Our Team"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvTeamTitle"
+                        android:textColor="#444" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/rahul"
+                            android:id="@+id/first_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFirstPersonName"
+                                android:text="Er. Rahul Vadecha"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFirstPersonDegree"
+                                android:text="Founder - Director"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/second_person"
+                            android:id="@+id/second_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSecondPersonName"
+                                android:text="Er. Kalpen Harsora"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSecondPersonDegree"
+                                android:text="Sr. Engineer"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/third_prson"
+                            android:id="@+id/third_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvThirdPersonName"
+                                android:text="Er. Dipak Harsora"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvThirdPersonDegree"
+                                android:text="Sr. Structure Engineer"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/fourth_person"
+                            android:id="@+id/fourth_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFourthPersonName"
+                                android:text="Adv. Mukesh Vadecha"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFourthPersonDegree"
+                                android:text="Head - Jovial Associates"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/paachmu"
+                            android:id="@+id/fifth_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFifthPersonName"
+                                android:text="Mr. Haresh Rathod"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvFifthPersonDegree"
+                                android:text="Head - HRD - Jovial Group"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/sixthperson"
+                            android:id="@+id/sixth_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSixthPersonName"
+                                android:text="Adv. Jayesh Lakkad"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSixthPersonDegree"
+                                android:text="Advocate - Jovial Group"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/seventh_person"
+                            android:id="@+id/seventh_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSeventhPersonName"
+                                android:text="Mr. Manish Tholiya"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSeventhPersonDegree"
+                                android:text="Assistance - HRD - Jovial Group"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#f9f9f9"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/last_person"
+                            android:id="@+id/eighth_person" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvEighthPersonName"
+                                android:text="Mr. Bharat Padsala"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#444"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvEighthPersonDegree"
+                                android:text="Financial Advisor - Jovial Group"
+                                android:textColor="#444"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

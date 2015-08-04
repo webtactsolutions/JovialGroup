@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/screen_logo_bg"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="bottom"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wellcome,"
+                        android:textSize="16sp"
+                        />
+
+
+                <TextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Parth Surti"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#444444" />
+
+                <TextView
+                    android:id="@+id/tv_profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="parth.surti@gmail.com"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#555555"
+                    android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_profile_uname_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USERNAME"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvdevider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ccc" />
+
+                <TextView
+                    android:id="@+id/tv_profile_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="div3791"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#444" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvDobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE OF BIRTH"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvdevider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ccc" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="" />-->
+
+                <TextView
+                    android:id="@+id/tv_profile_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="03-04-1990"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#444" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvphonenumberTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE NUMBER"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDevider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ccc" />
+
+                <TextView
+                    android:id="@+id/tv_profile_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="9992345678"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#444" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvmembershiptitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEMBERSHIP TYPE"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvdivider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ccc" />
+
+                <TextView
+                    android:id="@+id/tv_profile_member_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Client"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#444" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:id="@+id/upgaradeLayout"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tvdivider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ccc" />
+
+               <Button
+                   android:id="@+id/btn_upgrade"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="UPGRADE MEMBERSHIP"
+                   android:background="#090C48"
+                   android:textColor="#f9f9f9"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

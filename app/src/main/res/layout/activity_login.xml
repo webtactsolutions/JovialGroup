@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_logo_bg"
+    android:id="@+id/login_container"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/material_drawer_primary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_card"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp"
+        android:padding="10dp"
+        card_view:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#f9f9f9"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Login"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:id="@+id/tvLoginTitle"
+                android:textColor="#444" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_username"
+                android:layout_marginTop="8dp"
+                android:hint="USERNAME"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:nextFocusDown="@+id/et_password"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:singleLine="true"
+                android:id="@+id/et_password"
+                android:layout_marginTop="10dp"
+                android:hint="PASSWORD"
+                android:imeOptions="actionDone"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/btn_login"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:clickable="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/image_gellery_container"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+
+               <android.support.v4.view.ViewPager
+                   android:id="@+id/vp_home_fragment"
+                   android:layout_height="match_parent"
+                   android:layout_width="match_parent"
+                   android:elevation="4dp"></android.support.v4.view.ViewPager>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/logo_frame_layout"
+                android:paddingBottom="20dp"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/home_logo_width"
+                    android:layout_height="@dimen/home_logo_height"
+                    android:src="@drawable/jovial_logo"
+                    android:layout_gravity="center"
+                    android:id="@+id/menu_logo"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/root2Layuot"
+                    android:clickable="true"
+                    >
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rootLayuot"
+                            android:gravity="center"
+                            android:layout_marginBottom="30dp">
+
+
+                            <Button
+                                android:id="@+id/btn_revenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/revenuerecord_48"
+                                android:textSize="9sp"
+                                android:gravity="center"
+                                android:text="Revenue Records"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_gov_circular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/help_48"
+                                android:textSize="9sp"
+                                android:gravity="center"
+                                android:text="Help"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_loan_calculator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/loancalculator_48"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:text="Loan Calculator"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="2dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_tracker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/tracker_48"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:text="Tracker"
+                                android:layout_marginTop="10dp"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                />
+                            <Button
+                                android:id="@+id/btn_contact_us"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/contact_48"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:text="Contact Us"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_jantri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/villagemap_48"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:text="Map/Jantri"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <Button
+                                android:id="@+id/btn_map"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/services_48"
+                                android:textSize="9sp"
+                                android:text="Services"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_unit_converter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/unitconverter_48"
+                                android:textStyle="bold"
+                                android:text="Unit Converter"
+                                android:textSize="9sp"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"
+                                />
+                            <Button
+                                android:id="@+id/btn_my_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="58dp"
+                                android:drawableTop="@drawable/my_account_48"
+                                android:textStyle="bold"
+                                android:textSize="9sp"
+                                android:text="My Account"
+                                android:background="@android:color/transparent"
+                                android:alpha="0.0"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:text="menu"
+        android:textStyle="bold"
+        android:textColor="#01AEE2"
+        android:background="@drawable/menu_button"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+

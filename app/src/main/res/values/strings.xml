@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Jovial Group</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_content">Our Expertise, Your Freedom.
+
+Jovial Group, Since 2008.
+
+Jovial Group has strong reputation, sound legacy of success and heritage of high values in quality Expertise in Servicing and Commitment that makes the identity of Jovial Group from Surat. It was founded in 2008 with the vision to evolve as a leading company in real estate that leaves lasting impression and which last forever. Commitment to the level of devotion toward achieving excellence and values like integrity, dependability, leadership and trust have been the inseparable characteristics of the company since its inception. Today, owing to unfailing adherence to its quality standards, principles and ethics, Jovial Group enjoys recognition to be among the respected group of the nation.
+
+Jovial Group has always laid enough emphasis on understanding customer expectations and give the solutions from design to reality, All types of servicing on one roof like Architecture, Structure, Legal, Infrastructure and all types of liasoning services because we believe that an every customer wants only one roof or one platform to solve all types of solutions with best servicing within time period. And that type of roof or platform we provide. It is this unwavering pursuit of customer satisfaction and promise of commitment of excellence that makes us the trusted group of the new era.</string>
+
+<string name="vision_text">To contribute significantly to building the new India and become the world’s most valuable real estate company.</string>
+    <string name="mission_text">To build world-class real-estate concepts across six business lines with the highest standards of professionalism, ethics, quality and customer service.</string>
+    <string name="title_activity_tracker">Tracker</string>
+    <string name="title_activity_tracker_status">Status</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="title_activity_about">About Jovial Group</string>
+    <string name="title_activity_client">Clients</string>
+    <string name="title_activity_contact_details">Contacts Details</string>
+    <string name="title_activity_services">Services</string>
+    <string name="title_activity_projects">Projects</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_who_we_are">Who We Are?</string>
+
+    <string name="architecture_text">We do Designing and Plan Pass in the best and effective way for the client and provide the platform to the world. Architecture not only reflects our time and culture, but also shapes it.</string>
+
+    <string name="infrastructure_text">We have developed the requisite capabilities to take infrastructure projects, in variety of sectors like Residential Buildings, Hotels, Schools, Universities, Industries, Hospital and Many More...</string>
+
+    <string name="associates_text">We have expertise in the field of associates and deliver proper solutions and services for N.A., Tenure Work, Blocks Merging, Blocks Fragmentation and Preparing all types of Legal Agreements.</string>
+
+    <string name="values_one">Sustained efforts to enhance customer value and quality.</string>
+<string name="values_two">Ethical and professional service.</string>
+    <string name="values_three">Compliance and respect for all community, environmental and legal requirements.</string>
+    <string name="title_activity_unit_converter">Unit Converter</string>
+    <string name="title_activity_jantri">Map/Jantri</string>
+    <string name="title_activity_reg">Registration</string>
+    <string name="title_activity_revenue_record">Revenue Records</string>
+    <string name="title_activity_pdfopener">PDFOPener</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_gov_circular">GovCircular</string>
+    <string name="title_activity_circular">Help</string>
+    <string name="title_activity_activities">activities</string>
+    <string name="title_activity_img_opener">ImgOpenerActivity</string>
+    <string name="title_activity_my_account">MyAccount</string>
+    <string name="title_activity_loan_calculator">Loan Calculator</string>
+    <string name="title_activity_loan_calc_result">Calculation</string>
+    <string name="title_activity_help_pdfopener">Help</string>
+    <string name="title_activity_monthly_calculate">Monthly Calculation</string>
+    <string name="title_activity_yearly_at">Yearly Calculation</string>
+</resources>
